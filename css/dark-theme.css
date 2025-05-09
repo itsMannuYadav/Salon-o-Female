@@ -95,6 +95,51 @@
 
 /* Add more overrides as needed for your components */
 
+/* Fix: Ensure all stepper/subsection elements are visible in dark mode */
+.dark-theme .stepper,
+.dark-theme .steps,
+.dark-theme .step,
+.dark-theme .step-indicator,
+.dark-theme .step-label,
+.dark-theme .progress-bar,
+.dark-theme .progress,
+.dark-theme .sub-section,
+.dark-theme .form-section,
+.dark-theme .section-title,
+.dark-theme .tab,
+.dark-theme .tab-label {
+  background: transparent !important;
+  color: #f3f3f3 !important;
+  border-color: #353545 !important;
+  /* If using icons or circles, set their bg and color too */
+}
+.dark-theme .step.active,
+.dark-theme .step-indicator.active,
+.dark-theme .tab.active {
+  background: #f8b8a0 !important; /* soft peach for active step */
+  color: #23232a !important;
+  border-color: #f8b8a0 !important;
+}
+.dark-theme .step.inactive,
+.dark-theme .step-indicator.inactive,
+.dark-theme .tab.inactive {
+  background: #353545 !important;
+  color: #b0b0b5 !important;
+  border-color: #353545 !important;
+}
+.dark-theme .progress-bar,
+.dark-theme .progress {
+  background: #353545 !important;
+}
+
+/* Fix for white text on white backgrounds in forms/steppers */
+.dark-theme .form-section,
+.dark-theme .stepper,
+.dark-theme .steps {
+  background: #23232a !important;
+  color: #f3f3f3 !important;
+}
+
 /* Dark mode toggle button styling */
 #darkThemeToggle {
   position: fixed;
