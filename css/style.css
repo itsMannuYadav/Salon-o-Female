@@ -138,6 +138,28 @@ section {
   letter-spacing: 1px;
 }
 
+/* Logo hover and animation effects */
+.navbar .logo {
+  transition: color 0.3s, letter-spacing 0.3s, transform 0.3s;
+  position: relative;
+  z-index: 2;
+}
+.navbar .logo:hover, .navbar .logo:focus {
+  color: #e07a5f;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 16px rgba(224,122,95,0.15);
+  transform: scale(1.08) rotate(-2deg);
+  outline: none;
+}
+@keyframes logo-pop {
+  0% { transform: scale(1) rotate(0deg); }
+  60% { transform: scale(1.15) rotate(-3deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+.navbar .logo:active {
+  animation: logo-pop 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -787,5 +809,65 @@ section {
   .special-offers h2::after {
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+/* Image hover effects for all main images and cards */
+
+/* Service cards, team cards, testimonial cards, offer cards, Instagram feed, etc. */
+.service-card img,
+.team-card img,
+.testimonial-card img,
+.offer-card img,
+.instagram-feed img,
+.story-img,
+.category-icon img,
+.member-img,
+.value-icon img,
+.contact-image img,
+.join-team-image img,
+.service-option img,
+.booking-form img {
+  transition: transform 0.35s cubic-bezier(.4,2,.3,1), box-shadow 0.3s, filter 0.3s;
+  will-change: transform, box-shadow, filter;
+  border-radius: 1.1em;
+}
+
+.service-card img:hover,
+.team-card img:hover,
+.testimonial-card img:hover,
+.offer-card img:hover,
+.instagram-feed img:hover,
+.story-img:hover,
+.category-icon img:hover,
+.member-img:hover,
+.value-icon img:hover,
+.contact-image img:hover,
+.join-team-image img:hover,
+.service-option img:hover,
+.booking-form img:hover {
+  transform: scale(1.07) rotate(-2deg);
+  box-shadow: 0 8px 32px rgba(224,122,95,0.18), 0 2px 8px rgba(0,0,0,0.10);
+  filter: brightness(1.08) saturate(1.15);
+  z-index: 2;
+}
+
+/* For a subtle pop on tap for mobile */
+@media (hover: none) and (pointer: coarse) {
+  .service-card img:active,
+  .team-card img:active,
+  .testimonial-card img:active,
+  .offer-card img:active,
+  .instagram-feed img:active,
+  .story-img:active,
+  .category-icon img:active,
+  .member-img:active,
+  .value-icon img:active,
+  .contact-image img:active,
+  .join-team-image img:active,
+  .service-option img:active,
+  .booking-form img:active {
+    transform: scale(0.97) rotate(1deg);
+    filter: brightness(0.98) saturate(0.95);
   }
 }
