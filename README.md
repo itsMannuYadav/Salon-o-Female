@@ -45,6 +45,16 @@ service-menu.html       # Services page
     └── contact.html        # Additional contact page
 ```
 
+## Website Pages Overview
+
+A quick look at what each main page offers:
+
+- **Home (`index.html`)**: Welcomes visitors with a modern hero section, highlights featured services, showcases the team, testimonials, special offers, and an Instagram gallery.
+- **Services (`service-menu.html`)**: Detailed menu of all salon services, each with descriptions and images, making it easy for clients to explore offerings.
+- **Our Story (`our-story.html`)**: Shares the salon's background, values, and mission, helping build trust and connection with clients.
+- **Contact (`contact.html`)**: Provides contact details, a map, and a simple form for inquiries or feedback.
+- **Booking (`book.html`)**: Lets clients book appointments online, selecting services, date, and time for convenience.
+
 ## How to Use
 
 1. **Clone the repository**
