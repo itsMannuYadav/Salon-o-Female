@@ -1,25 +1,17 @@
-/* Dark Theme Overrides for Salon o Female */
-/* REFINED DARK THEME FOR BETTER VISIBILITY & SOFTNESS */
+/* Salon o Female - Modern Dark Theme (2025) */
 
-/* 1. Use a slightly lighter dark background for main content */
+/* 1. Base backgrounds and text */
 .dark-theme {
   background: #23232a !important;
   color: #f3f3f3 !important;
 }
 
-.dark-theme header,
-.dark-theme nav,
-.dark-theme footer {
-  background: #23232a !important;
-  color: #f3f3f3 !important;
-}
-
-/* 2. Section backgrounds: even lighter for contrast */
+/* 2. Section backgrounds: soft, slightly lighter for contrast */
 .dark-theme section {
   background: #282832 !important;
 }
 
-/* 3. Card and form containers: soft, slightly raised look */
+/* 3. Card, modal, and form containers: gentle elevation */
 .dark-theme .card,
 .dark-theme .service,
 .dark-theme .team-member,
@@ -31,11 +23,20 @@
   background: #292933 !important;
   color: #f3f3f3 !important;
   border: 1px solid #353545 !important;
-  box-shadow: 0 2px 12px 0 rgba(20,20,30,0.25) !important;
+  box-shadow: 0 2px 12px 0 rgba(20,20,30,0.18) !important;
   border-radius: 1.2em !important;
 }
 
-/* 4. Stepper and progress: visible, soft colors */
+/* 4. Navbar, header, footer: slightly darker for depth */
+.dark-theme header,
+.dark-theme nav,
+.dark-theme footer {
+  background: #202027 !important;
+  color: #f3f3f3 !important;
+  border-bottom: 1px solid #292933 !important;
+}
+
+/* 5. Steppers, tabs, progress: visible, soft colors */
 .dark-theme .step,
 .dark-theme .step-indicator,
 .dark-theme .tab,
@@ -51,19 +52,8 @@
   color: #23232a !important;
   border-color: #f8b8a0 !important;
 }
-.dark-theme .step.inactive,
-.dark-theme .step-indicator.inactive,
-.dark-theme .tab.inactive {
-  background: #353545 !important;
-  color: #b0b0b5 !important;
-  border-color: #353545 !important;
-}
-.dark-theme .progress-bar,
-.dark-theme .progress {
-  background: #353545 !important;
-}
 
-/* 5. Inputs and placeholders */
+/* 6. Inputs and placeholders */
 .dark-theme input,
 .dark-theme textarea,
 .dark-theme select {
@@ -77,11 +67,11 @@
   opacity: 1;
 }
 
-/* 6. Links and accent: soft blue */
+/* 7. Links and accent: soft blue */
 .dark-theme a { color: #8ab4f8 !important; }
 .dark-theme a:hover { color: #a3c9fa !important; }
 
-/* 7. Buttons: soft, not harsh */
+/* 8. Buttons: soft, not harsh */
 .dark-theme .btn,
 .dark-theme button {
   background: #353545 !important;
@@ -95,7 +85,7 @@
   color: #f8b8a0 !important;
 }
 
-/* 8. Disabled states */
+/* 9. Disabled states */
 .dark-theme input:disabled,
 .dark-theme button:disabled,
 .dark-theme .btn:disabled {
@@ -105,7 +95,7 @@
   cursor: not-allowed;
 }
 
-/* 9. Scrollbar styling for dark mode */
+/* 10. Scrollbar styling for dark mode */
 .dark-theme ::-webkit-scrollbar {
   width: 10px;
   background: #23232a;
@@ -115,47 +105,35 @@
   border-radius: 8px;
 }
 
-/* Add more overrides as needed for your components */
-
-/* Fix: Ensure all stepper/subsection elements are visible in dark mode */
-.dark-theme .stepper,
-.dark-theme .steps,
-.dark-theme .step,
-.dark-theme .step-indicator,
-.dark-theme .step-label,
-.dark-theme .progress-bar,
-.dark-theme .progress,
-.dark-theme .sub-section,
-.dark-theme .form-section,
-.dark-theme .section-title,
-.dark-theme .tab,
-.dark-theme .tab-label {
-  background: transparent !important;
-  color: #f3f3f3 !important;
-  border-color: #353545 !important;
-  /* If using icons or circles, set their bg and color too */
-}
-
-/* 10. Toggle button: keep visible */
+/* 11. Toggle button: keep visible */
 #darkThemeToggle {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 9999;
   background: #353545;
   color: #f3f3f3;
-  border: none;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  cursor: pointer;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.2s;
 }
 #darkThemeToggle:hover {
   background: #444456;
 }
+
+/* 12. Misc: subtle divider lines */
+.dark-theme hr,
+.dark-theme .divider {
+  border-color: #353545 !important;
+}
+
+/* 13. Skinny/greyish light mode (for reference, not active here) */
+body:not(.dark-theme) {
+  background: #f7f6f3;
+}
+section:not(.dark-theme) {
+  background: #f3f1ed;
+}
+.card:not(.dark-theme),
+.service:not(.dark-theme),
+.team-member:not(.dark-theme),
+.testimonial:not(.dark-theme),
+.offer:not(.dark-theme) {
+  background: #fff8f3;
+  border: 1px solid #f0e6e0;
+}
+
+/* End of modern dark theme */
