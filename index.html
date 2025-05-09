@@ -229,6 +229,87 @@
         <span>- Ravi Kr</span>
       </div>
     </div>
+    <style>
+      .testimonial-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 28px;
+        margin-top: 24px;
+      }
+      .testimonial-card {
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+        padding: 32px 20px 24px 20px;
+        text-align: center;
+        position: relative;
+        transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s;
+        cursor: pointer;
+        overflow: hidden;
+      }
+      .testimonial-card img {
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 16px;
+        border: 3px solid #f7c6e0;
+        transition: border-color 0.25s;
+        box-shadow: 0 2px 8px rgba(247,198,224,0.12);
+      }
+      .testimonial-card blockquote {
+        font-style: italic;
+        color: #444;
+        margin: 0 0 14px 0;
+        font-size: 1.08em;
+        line-height: 1.5;
+        min-height: 48px;
+      }
+      .testimonial-card span {
+        color: #b96fa2;
+        font-weight: 600;
+        font-size: 1em;
+        letter-spacing: 0.01em;
+      }
+      .testimonial-card::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 120%;
+        height: 120%;
+        background: radial-gradient(circle at 50% 50%, #f7c6e0 0%, transparent 70%);
+        opacity: 0;
+        pointer-events: none;
+        transform: translate(-50%, -50%) scale(0.8);
+        transition: opacity 0.3s, transform 0.3s;
+        z-index: 0;
+      }
+      .testimonial-card:hover,
+      .testimonial-card:focus-visible {
+        transform: translateY(-8px) scale(1.04) rotate(-1deg);
+        box-shadow: 0 8px 32px rgba(185,111,162,0.13), 0 2px 16px rgba(0,0,0,0.09);
+        z-index: 2;
+      }
+      .testimonial-card:hover::before,
+      .testimonial-card:focus-visible::before {
+        opacity: 0.18;
+        transform: translate(-50%, -50%) scale(1.05);
+      }
+      .testimonial-card:hover img,
+      .testimonial-card:focus-visible img {
+        border-color: #b96fa2;
+      }
+      @media (max-width: 700px) {
+        .testimonial-cards {
+          grid-template-columns: 1fr;
+          gap: 18px;
+        }
+        .testimonial-card {
+          padding: 24px 12px 18px 12px;
+        }
+      }
+    </style>
   </section>
 
   <section class="special-offers fade-in">
