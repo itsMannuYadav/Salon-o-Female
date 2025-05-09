@@ -1,0 +1,6 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#F2E6DF"/>
+  <path d="M150 75C150 75 200 50 250 75C300 100 300 175 250 200C200 225 150 175 150 75Z" fill="#FFD9CB"/>
+  <path d="M200 250C200 250 175 150 200 100C225 150 225 175 250 200C275 225 200 250 200 250Z" fill="#FFD9CB"/>
+  <text x="200" y="275" font-family="Arial" font-size="16" text-anchor="middle" fill="#444">Hair Service</text>
+</svg> 

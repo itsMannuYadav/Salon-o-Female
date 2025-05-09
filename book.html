@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salon | Book Online</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/book.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
+  <script defer src="js/main.js"></script>
+  <script defer src="js/book.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">SALON</div>
+    <div class="mobile-menu-btn" aria-label="Open navigation" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="book.html" class="active">Book Online</a></li>
+      <li><a href="service-menu.html">Service Menu</a></li>
+      <li><a href="our-story.html">Our story</a></li>
+      <li><a href="contact.html" class="btn-nav">Contact Us</a></li>
+    </ul>
+  </nav>
+  
+  <header class="book-hero fade-in">
+    <div class="book-hero-content">
+      <h1>Book Appointment</h1>
+    </div>
+  </header>
+  
+  <main class="booking-container fade-in">
+    <div class="booking-progress">
+      <ul class="steps">
+        <li class="step active" data-step="1">
+          <div class="step-icon">1</div>
+          <span>Service Selection</span>
+        </li>
+        <li class="step" data-step="2">
+          <div class="step-icon">2</div>
+          <span>Date & Time</span>
+        </li>
+        <li class="step" data-step="3">
+          <div class="step-icon">3</div>
+          <span>Your Information</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="booking-form">
+      <!-- Step 1: Service Selection -->
+      <div class="form-step active" id="step1">
+        <h2>Select a Service</h2>
+        <div class="service-options">
+          <div class="service-option">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=1000&auto=format&fit=crop" alt="Hair">
+            <h3>Hair</h3>
+            <p>Various hair styling, cutting, and coloring services</p>
+            <span class="price">Rs 1500 - 3000</span>
+            <button class="btn btn-outline service-select" data-service="Hair">Select</button>
+          </div>
+          <div class="service-option">
+            <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?q=80&w=1000&auto=format&fit=crop" alt="Makeup">
+            <h3>Makeup</h3>
+            <p>Professional makeup for all occasions</p>
+            <span class="price">Rs 2000 - 5000</span>
+            <button class="btn btn-outline service-select" data-service="Makeup">Select</button>
+          </div>
+          <div class="service-option">
+            <img src="https://images.unsplash.com/photo-1610992015732-2449b7c20b01?q=80&w=1000&auto=format&fit=crop" alt="Manicure & Pedicure">
+            <h3>Manicure & Pedicure</h3>
+            <p>Nail care and styling for hands and feet</p>
+            <span class="price">Rs 1500 - 3000</span>
+            <button class="btn btn-outline service-select" data-service="Manicure & Pedicure">Select</button>
+          </div>
+          <div class="service-option">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1000&auto=format&fit=crop" alt="Skincare">
+            <h3>Skincare</h3>
+            <p>Facial treatments and skin rejuvenation</p>
+            <span class="price">Rs 1500 - 3500</span>
+            <button class="btn btn-outline service-select" data-service="Skincare">Select</button>
+          </div>
+          <div class="service-option">
+            <img src="https://images.unsplash.com/photo-1596178060810-72660ee8d89f?q=80&w=1000&auto=format&fit=crop" alt="Facial">
+            <h3>Facial</h3>
+            <p>Deep cleansing and revitalizing facials</p>
+            <span class="price">Rs 1500 - 3000</span>
+            <button class="btn btn-outline service-select" data-service="Facial">Select</button>
+          </div>
+        </div>
+        <div class="form-buttons">
+          <button class="btn btn-primary next-step" data-next="2">Continue</button>
+        </div>
+      </div>
+
+      <!-- Step 2: Date & Time Selection -->
+      <div class="form-step" id="step2">
+        <h2>Select Date & Time</h2>
+        <div class="date-time-container">
+          <div class="calendar-container">
+            <div class="calendar-header">
+              <button class="month-nav prev">&lt;</button>
+              <h3 class="current-month">December 2023</h3>
+              <button class="month-nav next">&gt;</button>
+            </div>
+            <div class="calendar">
+              <div class="weekdays">
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+                <div>Sun</div>
+              </div>
+              <div class="days">
+                <!-- Calendar days will be added by JavaScript -->
+              </div>
+            </div>
+          </div>
+          <div class="time-slots">
+            <h3>Available Time Slots</h3>
+            <div class="time-options">
+              <!-- Time slots will be added by JavaScript based on selected date -->
+              <button class="time-option">9:00 AM</button>
+              <button class="time-option">10:00 AM</button>
+              <button class="time-option">11:00 AM</button>
+              <button class="time-option">12:00 PM</button>
+              <button class="time-option">2:00 PM</button>
+              <button class="time-option">3:00 PM</button>
+              <button class="time-option">4:00 PM</button>
+              <button class="time-option">5:00 PM</button>
+            </div>
+          </div>
+        </div>
+        <div class="form-buttons">
+          <button class="btn btn-outline prev-step" data-prev="1">Back</button>
+          <button class="btn btn-primary next-step" data-next="3">Continue</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Personal Information -->
+      <div class="form-step" id="step3">
+        <h2>Your Information</h2>
+        <form id="booking-info-form">
+          <div class="form-group">
+            <label for="name">Full Name*</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="notes">Special Requests (Optional)</label>
+            <textarea id="notes" rows="4"></textarea>
+          </div>
+          <div class="form-buttons">
+            <button type="button" class="btn btn-outline prev-step" data-prev="2">Back</button>
+            <button type="submit" class="btn btn-primary">Book Appointment</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Confirmation Screen (Hidden initially) -->
+      <div class="form-step" id="confirmation">
+        <div class="confirmation-message">
+          <div class="checkmark">
+            <div class="checkmark-circle"></div>
+            <div class="checkmark-stem"></div>
+            <div class="checkmark-kick"></div>
+          </div>
+          <h2>YOUR APPOINTMENT HAS BEEN BOOKED</h2>
+          <p>Please be on time we will be waiting for you.</p>
+          <div class="booking-details">
+            <h3>Booking Details</h3>
+            <div class="detail-row">
+              <span class="label">Service:</span>
+              <span class="value" id="confirm-service"></span>
+            </div>
+            <div class="detail-row">
+              <span class="label">Date:</span>
+              <span class="value" id="confirm-date"></span>
+            </div>
+            <div class="detail-row">
+              <span class="label">Time:</span>
+              <span class="value" id="confirm-time"></span>
+            </div>
+            <div class="detail-row">
+              <span class="label">Name:</span>
+              <span class="value" id="confirm-name"></span>
+            </div>
+          </div>
+          <p>A confirmation has been sent to your email.</p>
+          <a href="index.html" class="btn btn-primary">Finish</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-logo">
+        <span class="circle-logo">SALON</span>
+        <p class="tagline">We Don't Keep Our Beauty Secrets</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="service-menu.html">Service Menu</a></li>
+        <li><a href="our-story.html">Our story</a></li>
+      </ul>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>Don't miss promotions, follow us for the latest news</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><img src="assets/facebook-line.svg" alt="Facebook"></a>
+          <a href="#" aria-label="Instagram"><img src="assets/instagram-line.svg" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2023 Salon All rights reserved</p>
+    </div>
+  </footer>
+</body>
+</html>

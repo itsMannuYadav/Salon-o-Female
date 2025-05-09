@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salon | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">SALON</div>
+    <div class="mobile-menu-btn" aria-label="Open navigation" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="book.html">Book Online</a></li>
+      <li><a href="service-menu.html">Service Menu</a></li>
+      <li><a href="our-story.html">Our story</a></li>
+      <li><a href="contact.html" class="btn-nav">Contact Us</a></li>
+    </ul>
+  </nav>
+  <header class="hero fade-in" aria-label="Hero section with promotional content">
+    <div class="hero-content">
+      <h1>Always Make Room for a <span class="accent">Little Beauty</span> in Your Life</h1>
+      <p>Get your nails done for great mood. Simple pleasures can make your week, not just day.</p>
+      <div class="hero-buttons">
+        <a href="book.html" class="btn btn-primary">Book Appointment</a>
+        <a href="service-menu.html" class="btn btn-outline">Service Menu</a>
+      </div>
+      <style>
+        .hero-buttons {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          align-items: center;
+        }
+
+        .hero-buttons .btn {
+          width: 90%;
+          max-width: 300px;
+          text-align: center;
+        }
+
+        @media (min-width: 768px) {
+          .hero-buttons {
+            flex-direction: row;
+            gap: 20px;
+          }
+
+          .hero-buttons .btn {
+            width: auto;
+          }
+        }
+      </style>
+    </div>
+    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1000&auto=format&fit=crop"
+      alt="Interior view of a salon with modern decor" class="hero-img">
+  </header>
+  <section class="services fade-in">
+    <h2>Service Menu</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=1000&auto=format&fit=crop"
+          alt="Hair" />
+        <h3>Hair</h3>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?q=80&w=1000&auto=format&fit=crop"
+          alt="Makeup" />
+        <h3>Makeup</h3>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1000&auto=format&fit=crop"
+          alt="Manicure Pedicure" />
+        <h3>Manicure Pedicure</h3>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1000&auto=format&fit=crop"
+          alt="Skincare" />
+        <h3>Skincare</h3>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1000&q=80"
+          alt="Facial" />
+        <h3>Facial</h3>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=1000&q=80"
+          alt="Massage" />
+        <h3>Massage</h3>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1595433562696-1a519d5d8a22?auto=format&fit=crop&w=1000&q=80"
+          alt="Waxing" />
+        <h3>Waxing</h3>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1573497019410-9d3a9c8d4b3b?auto=format&fit=crop&w=1000&q=80"
+          alt="Eyebrow Threading" />
+        <h3>Eyebrow Threading</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-highlight fade-in">
+    <h2>Meet Our Stylists</h2>
+    <div class="team-cards slider" id="team-slider">
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80" alt="Stylist 1">
+        <h3>Priya Sharma</h3>
+        <p>Hair & Color Specialist</p>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80" alt="Stylist 2">
+        <h3>Anjali Mehra</h3>
+        <p>Makeup Artist</p>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&q=80" alt="Stylist 3">
+        <h3>Ritu Singh</h3>
+        <p>Skin & Spa Expert</p>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Stylist 4">
+        <h3>Simran Kaur</h3>
+        <p>Nail Technician</p>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Stylist 5">
+        <h3>Megha Patel</h3>
+        <p>Massage Therapist</p>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Stylist 6">
+        <h3>Neha Verma</h3>
+        <p>Bridal Specialist</p>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80" alt="Stylist 7">
+        <h3>Shreya Nanda</h3>
+        <p>Senior Hair Stylist</p>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?auto=format&fit=crop&w=400&q=80" alt="Stylist 8">
+        <h3>Divya Kapoor</h3>
+        <p>Beauty Consultant</p>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1519340333755-c2f6c58f5a01?auto=format&fit=crop&w=400&q=80" alt="Stylist 9">
+        <h3>Roshni Jain</h3>
+        <p>Makeup & Mehendi Artist</p>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&q=80" alt="Stylist 10">
+        <h3>Tanvi Desai</h3>
+        <p>Facial & Spa Expert</p>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Stylist 11">
+        <h3>Riya Sethi</h3>
+        <p>Senior Nail Artist</p>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Stylist 12">
+        <h3>Meera Joshi</h3>
+        <p>Threading & Waxing Specialist</p>
+      </div>
+    </div>
+    <button class="btn btn-outline team-toggle-btn" id="team-toggle-btn" style="display:none;">View More</button>
+  </section>
+
+  <section class="testimonials fade-in">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client 1">
+        <blockquote>"Absolutely loved my new look! The staff is so friendly and professional."</blockquote>
+        <span>- Sneha K.</span>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 2">
+        <blockquote>"Best facial experience ever. Highly recommend their services!"</blockquote>
+        <span>- Rahul S.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="special-offers fade-in">
+    <h2>Special Offers</h2>
+    <div class="offers-content">
+      <div class="offer-card">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" alt="Special Offer">
+        <div class="offer-details">
+          <h3>Summer Glow Package</h3>
+          <p>Get a facial, manicure, and hair spa at just <strong>Rs 2999</strong>! Limited time only.</p>
+          <a href="book.html" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+      <div class="offer-card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Special Offer 2">
+        <div class="offer-details">
+          <h3>Bridal Beauty Combo</h3>
+          <p>Bridal makeup, hair styling, and mehendi for <strong>Rs 7999</strong>. Book your big day!</p>
+          <a href="book.html" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+      <div class="offer-card">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Special Offer 3">
+        <div class="offer-details">
+          <h3>Monsoon Spa Retreat</h3>
+          <p>Relaxing massage, facial, and pedicure for <strong>Rs 2499</strong>. Treat yourself!</p>
+          <a href="book.html" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="story fade-in">
+    <div class="story-content">
+      <h2>Our Story</h2>
+      <p>We started as a small beauty studio in India. Our main idea was to create the best beauty studio in the world.
+        Our answer is always no, we care about the best quality, we hire the best specialists and provide the best
+        customer service. This project allowed us to grow and create an awesome team that is passionate about everything
+        we do.</p>
+      <a href="our-story.html" class="btn btn-outline">Learn More</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1000&auto=format&fit=crop"
+      alt="Our Story" class="story-img">
+  </section>
+  <section class="instagram fade-in">
+    <h2>Instagram</h2>
+    <div class="instagram-feed">
+      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1000&q=80"
+        alt="Instagram 1">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80"
+        alt="Instagram 2">
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1000&q=80"
+        alt="Instagram 3">
+      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1000&q=80"
+        alt="Instagram 4">
+    </div>
+    <a href="#" class="btn btn-primary">Follow us on Instagram</a>
+  </section>
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-logo">
+        <span class="circle-logo">SALON</span>
+        <p class="tagline">We Don't Keep Our Beauty Secrets</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="service-menu.html">Service Menu</a></li>
+        <li><a href="our-story.html">Our story</a></li>
+      </ul>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>Don't miss promotions, follow us for the latest news</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><img src="assets/facebook-line.svg" alt="Facebook"></a>
+          <a href="#" aria-label="Instagram"><img src="assets/instagram-line.svg" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2025 Salon All rights reserved</p>
+    </div>
+  </footer>
+  <script>
+    // Team View More/Less for mobile
+    document.addEventListener('DOMContentLoaded', function() {
+      const slider = document.getElementById('team-slider');
+      const btn = document.getElementById('team-toggle-btn');
+      if (!slider || !btn) return;
+      const cards = slider.querySelectorAll('.team-card');
+      const MOBILE_MAX = 3;
+      let expanded = false;
+
+      function updateView() {
+        if (window.innerWidth <= 700) {
+          btn.style.display = 'block';
+          cards.forEach((card, i) => {
+            card.style.display = (expanded || i < MOBILE_MAX) ? '' : 'none';
+          });
+          btn.textContent = expanded ? 'View Less' : 'View More';
+        } else {
+          btn.style.display = 'none';
+          cards.forEach(card => card.style.display = '');
+        }
+      }
+
+      btn.addEventListener('click', function() {
+        expanded = !expanded;
+        updateView();
+      });
+
+      window.addEventListener('resize', updateView);
+      updateView();
+    });
+  </script>
+</body>
+
+</html>

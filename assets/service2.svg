@@ -1,0 +1,8 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#F2E6DF"/>
+  <circle cx="200" cy="140" r="80" fill="#FFD9CB"/>
+  <circle cx="170" cy="120" r="15" fill="#FFC6B7"/>
+  <circle cx="230" cy="120" r="15" fill="#FFC6B7"/>
+  <path d="M170 160C170 160 185 180 200 180C215 180 230 160 230 160" stroke="#B76E79" stroke-width="5" stroke-linecap="round"/>
+  <text x="200" y="275" font-family="Arial" font-size="16" text-anchor="middle" fill="#444">Makeup Service</text>
+</svg> 
