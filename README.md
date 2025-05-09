@@ -1,6 +1,6 @@
 # Salon o Female
 
-A modern, responsive website template for a women's salon, built with HTML, CSS, and JavaScript. Perfect for showcasing services, team, testimonials, and special offers.
+Here's another one of my projects—a modern, responsive website template for a women's salon, built with HTML, CSS, and JavaScript. Perfect for showcasing services, team, testimonials, and special offers.
 
 ## Features
 
@@ -81,5 +81,7 @@ For any questions or customizations, contact:
 
 ---
 
-![Salon o Female Screenshot 1](assets/hero.svg)
-![Salon o Female Screenshot 2](assets/story.svg)
+![Waxing](https://img.freepik.com/free-photo/beautiful-young-girl-beauty-salon_1157-21117.jpg?semt=ais_hybrid&w=740)
+![Eyebrow Threading](https://media.istockphoto.com/id/177177852/photo/woman-on-facial-hair-removal-threading-procedure.jpg?s=612x612&w=0&k=20&c=H_Ojngs3D6SKquUtRQVBh2jc2oIhtQSWfiteQIujFn4=)
+![Special Offer 2](https://img.freepik.com/free-photo/beautiful-young-woman-wearing-sari_23-2149502957.jpg?semt=ais_hybrid&w=740)
+![Special Offer 3](https://img.freepik.com/free-photo/hugging-couple-having-wonderful-time-together_23-2148301392.jpg?semt=ais_hybrid&w=740)
