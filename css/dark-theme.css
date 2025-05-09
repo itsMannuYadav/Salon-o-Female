@@ -18,7 +18,13 @@
 .dark-theme .offer {
   background: #23232a !important;
   color: #f3f3f3 !important;
-  border-color: #333 !important;
+  border: 1px solid #292933 !important;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.35) !important;
+  border-radius: 1.2em !important;
+}
+
+.dark-theme section {
+  background: #1a1a1f !important;
 }
 
 .dark-theme input,
@@ -26,16 +32,23 @@
 .dark-theme select {
   background: #23232a !important;
   color: #f3f3f3 !important;
-  border-color: #444 !important;
+  border: 1px solid #292933 !important;
 }
 
-.dark-theme a { color: #a3e635 !important; }
+.dark-theme a { color: #8ab4f8 !important; }
 
 .dark-theme .btn,
 .dark-theme button {
-  background: #333 !important;
+  background: #292933 !important;
   color: #f3f3f3 !important;
   border-color: #444 !important;
+  transition: background 0.2s;
+}
+
+.dark-theme .btn:hover,
+.dark-theme button:hover {
+  background: #3a3a44 !important;
+  color: #8ab4f8 !important;
 }
 
 /* Add more overrides as needed for your components */
