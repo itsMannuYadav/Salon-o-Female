@@ -111,6 +111,13 @@ All images and icons are stored in the `assets` folder. To replace an image:
 - To add a new page, create a new HTML file and link it in the navigation.
 - To remove a page, delete the file and remove its link from the navigation.
 
+## Example Images
+
+- Waxing: ![Waxing](https://img.freepik.com/free-photo/beautiful-young-girl-beauty-salon_1157-21117.jpg?semt=ais_hybrid&w=740)
+- Eyebrow Threading: ![Eyebrow Threading](https://media.istockphoto.com/id/177177852/photo/woman-on-facial-hair-removal-threading-procedure.jpg?s=612x612&w=0&k=20&c=H_Ojngs3D6SKquUtRQVBh2jc2oIhtQSWfiteQIujFn4=)
+- Special Offer 2: ![Special Offer 2](https://img.freepik.com/free-photo/beautiful-young-woman-wearing-sari_23-2149502957.jpg?semt=ais_hybrid&w=740)
+- Special Offer 3: ![Special Offer 3](https://img.freepik.com/free-photo/hugging-couple-having-wonderful-time-together_23-2148301392.jpg?semt=ais_hybrid&w=740)
+
 ---
 
 For advanced customizations, edit the CSS and JS files in the `css/` and `js/` folders. Always keep a backup before making major changes.
