@@ -18,13 +18,13 @@
 .dark-theme .offer {
   background: #23232a !important;
   color: #f3f3f3 !important;
-  border: 1px solid #292933 !important;
-  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.35) !important;
+  border: 1px solid #353545 !important;
+  box-shadow: 0 2px 16px 0 rgba(20,20,30,0.45) !important;
   border-radius: 1.2em !important;
 }
 
 .dark-theme section {
-  background: #1a1a1f !important;
+  background: #202027 !important;
 }
 
 .dark-theme input,
@@ -33,6 +33,21 @@
   background: #23232a !important;
   color: #f3f3f3 !important;
   border: 1px solid #292933 !important;
+}
+
+.dark-theme input::placeholder,
+.dark-theme textarea::placeholder {
+  color: #b0b0b5 !important;
+  opacity: 1;
+}
+
+.dark-theme input:disabled,
+.dark-theme button:disabled,
+.dark-theme .btn:disabled {
+  background: #444 !important;
+  color: #888 !important;
+  border-color: #555 !important;
+  cursor: not-allowed;
 }
 
 .dark-theme a { color: #8ab4f8 !important; }
@@ -49,6 +64,33 @@
 .dark-theme button:hover {
   background: #3a3a44 !important;
   color: #8ab4f8 !important;
+}
+
+/* Accent color for all interactive elements */
+.dark-theme a,
+.dark-theme .btn,
+.dark-theme button,
+.dark-theme input[type="submit"],
+.dark-theme input[type="button"] {
+  --accent: #8ab4f8;
+}
+.dark-theme a:hover,
+.dark-theme .btn:hover,
+.dark-theme button:hover,
+.dark-theme input[type="submit"]:hover,
+.dark-theme input[type="button"]:hover {
+  color: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+
+/* Scrollbar styling for dark mode */
+.dark-theme ::-webkit-scrollbar {
+  width: 10px;
+  background: #23232a;
+}
+.dark-theme ::-webkit-scrollbar-thumb {
+  background: #353545;
+  border-radius: 8px;
 }
 
 /* Add more overrides as needed for your components */
