@@ -1,6 +1,9 @@
 /* Dark Theme Overrides for Salon o Female */
+/* REFINED DARK THEME FOR BETTER VISIBILITY & SOFTNESS */
+
+/* 1. Use a slightly lighter dark background for main content */
 .dark-theme {
-  background: #18181b !important;
+  background: #23232a !important;
   color: #f3f3f3 !important;
 }
 
@@ -11,36 +14,88 @@
   color: #f3f3f3 !important;
 }
 
+/* 2. Section backgrounds: even lighter for contrast */
+.dark-theme section {
+  background: #282832 !important;
+}
+
+/* 3. Card and form containers: soft, slightly raised look */
 .dark-theme .card,
 .dark-theme .service,
 .dark-theme .team-member,
 .dark-theme .testimonial,
-.dark-theme .offer {
-  background: #23232a !important;
+.dark-theme .offer,
+.dark-theme .form-section,
+.dark-theme .stepper,
+.dark-theme .steps {
+  background: #292933 !important;
   color: #f3f3f3 !important;
   border: 1px solid #353545 !important;
-  box-shadow: 0 2px 16px 0 rgba(20,20,30,0.45) !important;
+  box-shadow: 0 2px 12px 0 rgba(20,20,30,0.25) !important;
   border-radius: 1.2em !important;
 }
 
-.dark-theme section {
-  background: #202027 !important;
+/* 4. Stepper and progress: visible, soft colors */
+.dark-theme .step,
+.dark-theme .step-indicator,
+.dark-theme .tab,
+.dark-theme .tab-label {
+  background: #23232a !important;
+  color: #b0b0b5 !important;
+  border-color: #353545 !important;
+}
+.dark-theme .step.active,
+.dark-theme .step-indicator.active,
+.dark-theme .tab.active {
+  background: #f8b8a0 !important; /* soft peach for active step */
+  color: #23232a !important;
+  border-color: #f8b8a0 !important;
+}
+.dark-theme .step.inactive,
+.dark-theme .step-indicator.inactive,
+.dark-theme .tab.inactive {
+  background: #353545 !important;
+  color: #b0b0b5 !important;
+  border-color: #353545 !important;
+}
+.dark-theme .progress-bar,
+.dark-theme .progress {
+  background: #353545 !important;
 }
 
+/* 5. Inputs and placeholders */
 .dark-theme input,
 .dark-theme textarea,
 .dark-theme select {
   background: #23232a !important;
   color: #f3f3f3 !important;
-  border: 1px solid #292933 !important;
+  border: 1px solid #353545 !important;
 }
-
 .dark-theme input::placeholder,
 .dark-theme textarea::placeholder {
   color: #b0b0b5 !important;
   opacity: 1;
 }
 
+/* 6. Links and accent: soft blue */
+.dark-theme a { color: #8ab4f8 !important; }
+.dark-theme a:hover { color: #a3c9fa !important; }
+
+/* 7. Buttons: soft, not harsh */
+.dark-theme .btn,
+.dark-theme button {
+  background: #353545 !important;
+  color: #f3f3f3 !important;
+  border-color: #444 !important;
+  transition: background 0.2s;
+}
+.dark-theme .btn:hover,
+.dark-theme button:hover {
+  background: #444456 !important;
+  color: #f8b8a0 !important;
+}
+
+/* 8. Disabled states */
 .dark-theme input:disabled,
 .dark-theme button:disabled,
 .dark-theme .btn:disabled {
@@ -50,40 +105,7 @@
   cursor: not-allowed;
 }
 
-.dark-theme a { color: #8ab4f8 !important; }
-
-.dark-theme .btn,
-.dark-theme button {
-  background: #292933 !important;
-  color: #f3f3f3 !important;
-  border-color: #444 !important;
-  transition: background 0.2s;
-}
-
-.dark-theme .btn:hover,
-.dark-theme button:hover {
-  background: #3a3a44 !important;
-  color: #8ab4f8 !important;
-}
-
-/* Accent color for all interactive elements */
-.dark-theme a,
-.dark-theme .btn,
-.dark-theme button,
-.dark-theme input[type="submit"],
-.dark-theme input[type="button"] {
-  --accent: #8ab4f8;
-}
-.dark-theme a:hover,
-.dark-theme .btn:hover,
-.dark-theme button:hover,
-.dark-theme input[type="submit"]:hover,
-.dark-theme input[type="button"]:hover {
-  color: var(--accent) !important;
-  border-color: var(--accent) !important;
-}
-
-/* Scrollbar styling for dark mode */
+/* 9. Scrollbar styling for dark mode */
 .dark-theme ::-webkit-scrollbar {
   width: 10px;
   background: #23232a;
@@ -113,40 +135,14 @@
   border-color: #353545 !important;
   /* If using icons or circles, set their bg and color too */
 }
-.dark-theme .step.active,
-.dark-theme .step-indicator.active,
-.dark-theme .tab.active {
-  background: #f8b8a0 !important; /* soft peach for active step */
-  color: #23232a !important;
-  border-color: #f8b8a0 !important;
-}
-.dark-theme .step.inactive,
-.dark-theme .step-indicator.inactive,
-.dark-theme .tab.inactive {
-  background: #353545 !important;
-  color: #b0b0b5 !important;
-  border-color: #353545 !important;
-}
-.dark-theme .progress-bar,
-.dark-theme .progress {
-  background: #353545 !important;
-}
 
-/* Fix for white text on white backgrounds in forms/steppers */
-.dark-theme .form-section,
-.dark-theme .stepper,
-.dark-theme .steps {
-  background: #23232a !important;
-  color: #f3f3f3 !important;
-}
-
-/* Dark mode toggle button styling */
+/* 10. Toggle button: keep visible */
 #darkThemeToggle {
   position: fixed;
   bottom: 24px;
   right: 24px;
   z-index: 9999;
-  background: #23232a;
+  background: #353545;
   color: #f3f3f3;
   border: none;
   border-radius: 50%;
@@ -161,5 +157,5 @@
   transition: background 0.2s;
 }
 #darkThemeToggle:hover {
-  background: #333;
+  background: #444456;
 }
