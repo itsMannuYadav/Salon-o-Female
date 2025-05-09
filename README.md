@@ -81,8 +81,9 @@ For any questions or customizations, contact:
 
 ---
 
-![Home Page Screenshot]("assets/HomePage Screenshot.png")
+![Home Page Screenshot](assets/HomePage%20Screenshot.png)
 
-![Service Section Screenshot]("assets/Service Section Screenshot.png")
+![Service Section Screenshot](assets/Service%20Section%20Screenshot.png)
 
-![Full Page Screenshot]("assets/Full Page Screencapture.png")
+![Full Page Screenshot](assets/Full%20Page%20Screencapture.png)
+
